@@ -1,0 +1,114 @@
+//Work
+.work-list-items {
+  list-style: none;
+}
+
+.work-list-item {
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    color: $black;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+
+  span {
+    color: $light-gray;
+  }
+}
+
+.resume-wrapper {
+  margin-top: 3rem;
+  background-color: $body-background;
+}
+
+.resume-content {
+  background-color: $white;
+  width: 100%;
+  overflow-x: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 2px solid lighten($color: $secondary-color, $amount: 10);
+
+  @include min-break-point(tablet) {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.resume-col-1 {
+  padding: 3rem;
+  padding-top: 1rem;
+  min-width: 20rem;
+
+  &:nth-of-type(1) {
+    padding-top: 3rem;
+  }
+}
+
+.resume-col-2 {
+  padding: 3rem;
+
+  &:last-of-type {
+    padding-top: 1rem;
+  }
+}
+
+.heading-row-2 {
+  margin-bottom: 1rem;
+  color: $primary-color;
+}
+
+.resume-job-title {
+  font-size: 0.9rem;
+}
+
+.resume-summary {
+  margin-top: 1rem;
+  color: $black;
+}
+
+.skill-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.skill-item {
+  font-size: 0.9rem;
+}
+
+.bullets {
+  height: 8px;
+  width: 8px;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  background: $black;
+  margin-right: 0.5rem;
+}
+
+.resume-experiences {
+  h4 {
+    color: $light-gray;
+    margin-bottom: 0.3rem;
+    span {
+      color: $black;
+    }
+  }
+
+  h6 {
+    margin-bottom: 0.8rem;
+  }
+
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0rem;
+  }
+}

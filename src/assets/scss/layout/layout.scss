@@ -1,0 +1,17 @@
+.__layout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-content {
+  display: flex;
+
+  &.vertical {
+    align-items: center;
+  }
+  &.horizontal {
+    justify-content: center;
+  }
+}

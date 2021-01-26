@@ -1,0 +1,53 @@
+.tag-wrapper {
+  border: 2px solid $border-color;
+  padding: 1em;
+  margin-bottom: 2rem;
+  border-radius: $border-radius;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.react-tagsinput-input {
+  background-color: #fff;
+  overflow: hidden;
+  border: 0 solid #e2e8f0;
+  display: inline-block;
+  padding: 0em;
+  padding-left: 0.4rem;
+  width: 75%;
+  margin: 0;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  @include min-break-point(tablet) {
+    width: 25%;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.react-tagsinput-tag {
+  background-color: lighten($color: $light-primary-color, $amount: 20);
+  border-radius: $border-radius;
+  color: $primary-color;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-right: 0.4rem;
+  padding: 0.3rem;
+}
+
+.react-tagsinput-tag a::before {
+  content: " ×";
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

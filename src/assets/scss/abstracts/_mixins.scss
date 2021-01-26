@@ -1,0 +1,84 @@
+//media-query
+@mixin max-break-point($point) {
+  $mobile-phone: (
+    max-width: 576px,
+  );
+
+  $tablet: (
+    max-width: 768px,
+  );
+
+  $tablet-landscape: (
+    max-width: 991px,
+  );
+
+  $large-desktop: (
+    max-width: 1200px,
+  );
+
+  @if $point == mobile-phone {
+    @media #{$mobile-phone} {
+      @content;
+    }
+  }
+
+  @if $point == tablet {
+    @media #{$tablet} {
+      @content;
+    }
+  }
+
+  @if $point == tablet-landscape {
+    @media #{$tablet-landscape} {
+      @content;
+    }
+  }
+
+  @if $point == large-desktop {
+    @media #{$large-desktop} {
+      @content;
+    }
+  }
+}
+
+@mixin min-break-point($point) {
+  $mobile-phone: (
+    min-width: 576px,
+  );
+
+  $tablet: (
+    min-width: 768px,
+  );
+
+  $tablet-landscape: (
+    min-width: 991px,
+  );
+
+  $large-desktop: (
+    min-width: 1200px,
+  );
+
+  @if $point == mobile-phone {
+    @media #{$mobile-phone} {
+      @content;
+    }
+  }
+
+  @if $point == tablet {
+    @media #{$tablet} {
+      @content;
+    }
+  }
+
+  @if $point == tablet-landscape {
+    @media #{$tablet-landscape} {
+      @content;
+    }
+  }
+
+  @if $point == large-desktop {
+    @media #{$large-desktop} {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+//logo
+.logo-img-wrapper {
+  min-height: 2.1rem;
+}
+
+.logo-img {
+  width: 180px;
+  @include min-break-point(tablet) {
+    width: 200px;
+  }
+}
+
+//resume-img
+.heading-img-wrapper {
+  min-height: 11rem;
+}
+
+.heading-img {
+  margin-top: 3rem;
+  width: 105px;
+}
+
+//body
+.info {
+  margin-top: 3rem;
+  max-width: 35rem;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.8rem;
+  @include min-break-point(tablet) {
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+
+.create-wrapper {
+  background: $primary-color;
+  margin-top: 40px;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s linear 0s;
+  cursor: pointer;
+
+  &:hover {
+    outline: none;
+    background: $light-primary-color;
+  }
+  .create {
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+label {
+  font-size: 18px;
+  color: $light-gray;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  padding: 18px 15px;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border: 2px solid $border-color;
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+  border-radius: $border-radius;
+  color: $black;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+
+  &:focus {
+    border-color: $secondary-color;
+    outline: 0;
+    box-shadow: 0 0 5px $secondary-color;
+  }
+}
+
+.checkbox-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 2rem;
+  margin-right: 0.5rem;
+  margin-top: -0.4rem;
+}
+
+textarea {
+  padding: 18px 15px;
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  border: 2px solid $border-color;
+  font-weight: 500;
+  width: 100%;
+  max-width: 100%;
+  color: $black;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+
+  &:focus {
+    border-color: $secondary-color;
+    outline: 0;
+    box-shadow: 0 0 5px $secondary-color;
+  }
+}
+
+.heading-text {
+  margin-bottom: 3rem;
+}
+
+.steps {
+  color: $light-gray;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+
+  @include min-break-point(tablet) {
+    font-size: 1.2rem;
+  }
+}
+
+$light-placeholder-color: lighten(
+  $color: $light-gray,
+  $amount: 20,
+);
+
+::placeholder {
+  color: $light-placeholder-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $light-placeholder-color;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $light-placeholder-color;
+}

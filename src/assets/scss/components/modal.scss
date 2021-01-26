@@ -1,0 +1,35 @@
+.close {
+  outline: none;
+}
+
+.modal {
+  border-radius: $border-radius;
+  min-width: 21rem;
+}
+
+.modal-heading {
+  margin: 2rem 0rem;
+}
+
+.modal-input-layout {
+  display: flex;
+  flex-direction: column;
+
+  @include min-break-point(tablet) {
+    flex-direction: row;
+  }
+}
+
+.date-wrapper {
+  &:nth-child(1) {
+    width: 100%;
+  }
+
+  &:nth-child(2) {
+    width: 100%;
+
+    @include min-break-point(tablet) {
+      width: 90%;
+    }
+  }
+}

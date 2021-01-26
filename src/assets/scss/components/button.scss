@@ -1,0 +1,88 @@
+.close-button-wrapper {
+  position: absolute;
+  top: -1rem;
+  right: 0.1rem;
+  background-color: $light-accent-color;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s linear 0s;
+  &:hover {
+    background-color: darken($color: $light-accent-color, $amount: 20);
+  }
+  @include min-break-point(tablet) {
+    top: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .close-button {
+    font-size: 1em;
+    color: $accent-color;
+
+    @include min-break-point(tablet) {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.btn-wrapper {
+  &.right {
+    text-align: right;
+  }
+  &.left {
+    text-align: left;
+  }
+}
+
+.primary-btn {
+  background-color: $primary-color;
+  color: $white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  font-weight: $semi-bold;
+  cursor: pointer;
+  transition: background 0.3s linear 0s, color 0.3s linear 0s;
+
+  @include min-break-point(tablet) {
+    font-size: 1.2rem;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $dark-primary-color;
+  }
+}
+
+.text-btn {
+  @extend .primary-btn;
+  color: $light-gray;
+  background-color: transparent;
+
+  &.p-0 {
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $black;
+    background-color: transparent;
+  }
+}
+
+.open-modal-btn {
+  @extend .text-btn;
+  color: $primary-color;
+  padding: 0;
+  margin-bottom: 2rem;
+  &:focus {
+    color: $dark-primary-color;
+  }
+}

@@ -1,0 +1,31 @@
+//@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  font-family: $font-family;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
+
+  @include min-break-point(tablet) {
+    font-size: 2em;
+  }
+}
+
+body {
+  font-size: 15px;
+}
+
+a {
+  color: $primary-color;
+  font-size: 1.4rem;
+}
+
+p {
+  color: $light-gray;
+}

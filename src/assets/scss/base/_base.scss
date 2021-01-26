@@ -1,0 +1,61 @@
+$secondary-color: map-get($brand-color, "secondary");
+$primary-color: map-get($brand-color, "primary");
+$accent-color: map-get($brand-color, "accent");
+$light-primary-color: lighten(
+  $color: $primary-color,
+  $amount: 8,
+);
+$dark-primary-color: darken(
+  $color: $primary-color,
+  $amount: 8,
+);
+$light-accent-color: lighten(
+  $color: $accent-color,
+  $amount: 40,
+);
+
+body {
+  background-color: $body-background;
+  color: $black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 3rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &.form-container {
+    max-width: 900px;
+  }
+
+  @include min-break-point(tablet) {
+    padding: 4rem 1rem;
+  }
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.mr-only-pc {
+  margin-right: 0rem;
+
+  @include min-break-point(tablet) {
+    margin-right: 1.5rem;
+  }
+}
+
+.mr {
+  margin-right: 0.8rem;
+}
+
+.ml {
+  margin-left: 1rem;
+}
