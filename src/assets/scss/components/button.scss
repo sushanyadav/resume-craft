@@ -1,3 +1,36 @@
+.create-wrapper {
+  background: $primary-color;
+  margin-top: 40px;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s linear 0s;
+  cursor: pointer;
+
+  &:hover {
+    outline: none;
+    background: $light-primary-color;
+  }
+  .create {
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include min-break-point(tablet) {
+      height: inherit;
+      width: inherit;
+    }
+  }
+}
+
 .close-button-wrapper {
   position: absolute;
   top: -1rem;
