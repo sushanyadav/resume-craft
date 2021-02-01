@@ -28,7 +28,7 @@ const Preview = ({ history }) => {
 
     localStorage.clear();
     window.location.reload();
-    history.push(CREATE.BASIC_INFO);
+    history.push(CREATE.INDEX);
   };
 
   return (
