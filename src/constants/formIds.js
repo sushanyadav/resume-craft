@@ -49,13 +49,3 @@ export const steps = {
   5: skillsIds.FORM_ID,
   6: previewIds.FORM_ID,
 };
-
-export default {
-  basicInfoIds,
-  summaryIds,
-  contactInfoIds,
-  workIds,
-  workModalIds,
-  skillsIds,
-  steps,
-};

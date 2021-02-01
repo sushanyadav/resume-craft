@@ -14,7 +14,6 @@ const TextArea = ({ id, value, setValue, label, placeholder }) => {
         name={id}
         rows="7"
         cols="12"
-        name="comment"
         form="usrform"
         maxLength="650"
         value={value}

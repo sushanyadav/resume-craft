@@ -13,6 +13,7 @@ export const CREATE = {
   PREVIEW: "/create/preview",
 };
 
+// eslint-disable-next-line
 export default {
   HOME,
   CREATE,

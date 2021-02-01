@@ -52,7 +52,8 @@ const WorkModal = ({
         [END_DATE]: "",
       });
     }
-  }, [currentlyWorking]);
+    // eslint-disable-next-line
+  }, [currentlyWorking, END_DATE, setWorkExperience]);
 
   useEffect(() => {
     if (startDate > endDate) {
@@ -61,7 +62,8 @@ const WorkModal = ({
         [END_DATE]: "",
       });
     }
-  }, [startDate]);
+    // eslint-disable-next-line
+  }, [startDate, endDate, END_DATE, setWorkExperience]);
 
   return (
     <Modal

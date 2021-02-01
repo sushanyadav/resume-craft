@@ -5,9 +5,10 @@ import { ResumeDetailsContext } from "contextAPI/ResumeDetailsContext";
 
 import { CREATE } from "constants/routes";
 
-const RedirectIfSumbitted = (Component) => ({ ...props }) => {
+const RedirectIfSumbitted = (Component) => (props) => {
+  // eslint-disable-next-line
   const { pathname } = useLocation();
-
+  // eslint-disable-next-line
   const [resumeDetail] = useContext(ResumeDetailsContext);
 
   const {

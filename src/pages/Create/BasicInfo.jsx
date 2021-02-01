@@ -55,7 +55,9 @@ const BasicInfo = ({ history }) => {
 
     //saving to localStorage
     populateResume(resume);
-  }, [basicInfo]);
+
+    // eslint-disable-next-line
+  }, [basicInfo, FORM_ID, setResumeDetails]);
 
   const { firstname, lastname, jobtitle } = basicInfo;
 

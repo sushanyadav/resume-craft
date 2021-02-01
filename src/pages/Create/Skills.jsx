@@ -58,7 +58,8 @@ const Skills = ({ history }) => {
       //saving to localStorage
       populateResume(resume);
     }
-  }, [skills]);
+    // eslint-disable-next-line
+  }, [skills, FORM_ID, SKILLS, setResumeDetails, skillsInitialState.length]);
 
   return (
     <FormLayout

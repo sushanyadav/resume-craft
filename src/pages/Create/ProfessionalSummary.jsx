@@ -60,7 +60,8 @@ const ProfessionalSummary = ({ history }) => {
 
     //saving to localStorage
     populateResume(resume);
-  }, [professionalSummary]);
+    // eslint-disable-next-line
+  }, [professionalSummary, FORM_ID, setResumeDetails]);
 
   return (
     <FormLayout

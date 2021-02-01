@@ -58,7 +58,8 @@ const ContactInfo = ({ history }) => {
 
     //saving to localStorage
     populateResume(resume);
-  }, [contactInfo]);
+    // eslint-disable-next-line
+  }, [contactInfo, FORM_ID, setResumeDetails]);
 
   return (
     <FormLayout
