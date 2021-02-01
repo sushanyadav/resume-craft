@@ -29,7 +29,7 @@ const Resume = () => {
       <div className="resume-col-2">
         <div>
           <span className="primary-color">
-            {city || "City"} {", "} {state || "State"}
+            {`${city || "City"}, ${state || "State"}`}
           </span>
         </div>
         <div>
