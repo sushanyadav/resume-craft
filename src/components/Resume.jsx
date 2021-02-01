@@ -43,7 +43,7 @@ const Resume = () => {
       <div className="resume-col-1">
         <h3 className="heading-row-2">EXPERIENCE</h3>
         <div>
-          {!workExperiences ? (
+          {!workExperiences || !workExperiences.length ? (
             <p>You haven't added any experience yet</p>
           ) : (
             workExperiences.map(
@@ -75,7 +75,7 @@ const Resume = () => {
       <div className="resume-col-2">
         <h3 className="heading-row-2">SKILLS</h3>
         <div>
-          {!skills ? (
+          {!skills || !skills.length ? (
             <p>You haven't added any skill yet</p>
           ) : (
             skills.map((skill) => (

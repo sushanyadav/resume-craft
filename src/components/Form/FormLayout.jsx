@@ -3,10 +3,10 @@ import { withRouter } from "react-router-dom";
 
 import { ResumeDetailsContext } from "contextAPI/ResumeDetailsContext";
 
-import getGoBackRoute from "utils/getGoBackRoute";
 import { populateResume } from "utils/resume";
 
 import { steps } from "constants/formIds";
+import { CREATE } from "constants/routes";
 
 const FormLayout = ({
   children,
@@ -36,6 +36,36 @@ const FormLayout = ({
 
     //saving to localStorage
     populateResume(resume);
+
+    const {
+      PROFESSIONAL_SUMMARY,
+      BASIC_INFO,
+      CONTACT_INFO,
+      WORK_EXPERIENCE,
+      SKILLS,
+    } = CREATE;
+
+    const getGoBackRoute = (step) => {
+      switch (step) {
+        case 2:
+          return BASIC_INFO;
+
+        case 3:
+          return PROFESSIONAL_SUMMARY;
+
+        case 4:
+          return CONTACT_INFO;
+
+        case 5:
+          return WORK_EXPERIENCE;
+
+        case 6:
+          return SKILLS;
+
+        default:
+          break;
+      }
+    };
 
     const gobackRoute = getGoBackRoute(step);
 
