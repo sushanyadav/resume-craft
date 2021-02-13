@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 
 import { ResumeDetailsContext } from "contextAPI/ResumeDetailsContext";
 
-import { populateResume } from "utils/resume";
+import { populateResume } from "services/resume";
 
 import { steps } from "constants/formIds";
 import { CREATE } from "constants/routes";

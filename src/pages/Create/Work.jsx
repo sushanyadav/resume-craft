@@ -7,7 +7,7 @@ import RedirectIfSumbitted from "hoc/RedirectIfSumbitted";
 import FormLayout from "components/Form/FormLayout";
 import WorkModal from "components/Modal/WorkModal";
 
-import { populateResume } from "utils/resume";
+import { populateResume } from "services/resume";
 import { getWorkExperienceInitalState } from "utils/getResumeInitalState";
 import randomIdGenerator from "utils/randomIdGenerator";
 

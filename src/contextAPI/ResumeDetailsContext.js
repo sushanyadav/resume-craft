@@ -1,6 +1,6 @@
 import React, { useState, createContext } from "react";
 
-import { getResume } from "utils/resume";
+import { getResume } from "services/resume";
 
 export const ResumeDetailsContext = createContext();
 
