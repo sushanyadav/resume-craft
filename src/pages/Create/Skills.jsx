@@ -7,7 +7,7 @@ import RedirectIfSumbitted from "hoc/RedirectIfSumbitted";
 
 import FormLayout from "components/Form/FormLayout";
 
-import { populateResume } from "utils/resume";
+import { populateResume } from "services/resume";
 
 import { skillsIds } from "constants/formIds";
 import { CREATE } from "constants/routes";
